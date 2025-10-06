@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #ffe6e6;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  background-color: #fff0f5;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 10;
+  max-width: 500px;
+}
+
+h1 {
+  color: #d6336c;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #d6336c;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 12px;
+  transition: background 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.accept {
+  background-color: #d6336c;
+}
+
+.accept:hover {
+  background-color: #a52a54;
+}
+
+.decline {
+  background-color: #888;
+}
+
+.decline:hover {
+  background-color: #555;
+}
+
+#resposta {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #d6336c;
+  font-size: 1.2em;
+}
+
+.heart {
+  position: absolute;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  animation: floatUp linear infinite;
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0.5); opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-50px) scale(1); opacity: 0; }
+}
