@@ -1,7 +1,7 @@
 // Funções para mostrar mensagem imediatamente e enviar Formspree
 function respostaAceitar(event) {
   event.preventDefault(); // não muda de página
-  document.getElementById('resposta').textContent = "Que bom! Eu te busco às 20:30 ❤️";
+  document.getElementById('resposta').textContent = "Que bom! Eu te busco às 20Hrs❤️";
 
   // envia os dados para o Formspree
   const form = event.target;
@@ -35,3 +35,4 @@ for (let i = 0; i < numHearts; i++) {
   heart.style.animationDelay = Math.random() * 5 + 's';
   document.body.appendChild(heart);
 }
+
